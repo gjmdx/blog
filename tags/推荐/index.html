@@ -462,5 +462,34 @@
 
   
 
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : true,
+      notify     : false,
+      appId      : 'wPH2Jnm3oElgKPw2VVl9mJsg-gzGzoHsz',
+      appKey     : 'BvY7WRtzhJPv6R7BHVVavXF0',
+      placeholder: "介个是评论区～",
+      avatar     : 'robohash',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : 'zh-cn' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : true,
+      serverURLs : 'hexo-comment-api.yeslu.cn'
+    });
+  }, window.Valine);
+});
+</script>
+
 </body>
 </html>
