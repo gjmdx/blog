@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 4.2.0">
+<meta name="generator" content="Hexo 4.2.1">
+
+
   <link rel="apple-touch-icon" sizes="180x180" href="/images/macaron/icon_256x256.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/macaron/icon_32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/images/macaron/icon_16x16.png">
@@ -14,12 +16,14 @@
 <link rel="stylesheet" href="/css/main.css">
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
 
-<script id="hexo-configurations">
+<script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"www.yeslu.cn","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"www.yeslu.cn","root":"/","images":"/images","scheme":"Pisces","version":"8.0.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
   </script>
 
   <meta name="description" content="《100 Words Almost Everyone Confuses》Day 1 (2019.03.01 11:00 - 13:00, Pomo Time * 5)1. adverse Oxford: adj. 不利的；有害的；反面的 关系词汇 adversely adv. 逆地,反对地   例句翻译 “And let thy blows, doubly redoubled, &#x2F; Fall li">
@@ -32,15 +36,16 @@
 <meta property="article:published_time" content="2019-05-20T14:44:12.000Z">
 <meta property="article:modified_time" content="2019-12-08T07:09:43.000Z">
 <meta property="article:author" content="Chandler-Lu">
-<meta property="article:tag" content="英语">
 <meta property="article:tag" content="词汇">
+<meta property="article:tag" content="英语">
 <meta property="article:tag" content="学习">
 <meta name="twitter:card" content="summary">
+
 
 <link rel="canonical" href="https://www.yeslu.cn/archives/1dbbbd73.html">
 
 
-<script id="page-configurations">
+<script class="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
@@ -69,49 +74,61 @@
 
   <noscript>
   <style>
-  .use-motion .brand,
+  body { margin-top: 2rem; }
+
   .use-motion .menu-item,
-  .sidebar-inner,
+  .use-motion .sidebar,
   .use-motion .post-block,
   .use-motion .pagination,
   .use-motion .comments,
   .use-motion .post-header,
   .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
+  .use-motion .collection-header {
+    visibility: visible;
+  }
+
+  .use-motion .header,
+  .use-motion .site-brand-container .toggle,
+  .use-motion .footer { opacity: initial; }
 
   .use-motion .site-title,
-  .use-motion .site-subtitle {
+  .use-motion .site-subtitle,
+  .use-motion .custom-logo-image {
     opacity: initial;
     top: initial;
   }
 
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
+  .use-motion .logo-line {
+    transform: scaleX(1);
+  }
+
+  .search-pop-overlay, .sidebar-nav { display: none; }
+  .sidebar-panel { display: block; }
   </style>
 </noscript>
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
 
+  <main class="main">
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="切换导航栏">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
     </div>
   </div>
 
   <div class="site-meta">
 
     <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
+      <i class="logo-line"></i>
       <h1 class="site-title">这是只兔子</h1>
-      <span class="logo-line-after"><i></i></span>
+      <i class="logo-line"></i>
     </a>
       <p class="site-subtitle" itemprop="description">This is a Rabbit.</p>
   </div>
@@ -124,9 +141,8 @@
 
 
 
-
 <nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
+  <ul class="main-menu menu">
         <li class="menu-item menu-item-home">
 
     <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
@@ -154,6 +170,79 @@
 
 
 </div>
+        
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <section class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#《100-Words-Almost-Everyone-Confuses》"><span class="nav-number">1.</span> <span class="nav-text">《100 Words Almost Everyone Confuses》</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-1-2019-03-01-11-00-13-00-Pomo-Time-5"><span class="nav-number">1.1.</span> <span class="nav-text">Day 1 (2019.03.01 11:00 - 13:00, Pomo Time * 5)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-adverse"><span class="nav-number">1.1.1.</span> <span class="nav-text">1. adverse</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-affect-1"><span class="nav-number">1.1.2.</span> <span class="nav-text">2. affect(1)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-2-2019-03-02-12-00-13-00-Pomo-Time-3"><span class="nav-number">1.2.</span> <span class="nav-text">Day 2 (2019.03.02 12:00 - 13:00, Pomo Time * 3)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-affect-2"><span class="nav-number">1.2.1.</span> <span class="nav-text">3. affect(2)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-aggravate"><span class="nav-number">1.2.2.</span> <span class="nav-text">4. aggravate</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-3-2019-03-03-19-40-20-50-Pomo-Time-2"><span class="nav-number">1.3.</span> <span class="nav-text">Day 3 (2019.03.03 19:40 - 20:50, Pomo Time * 2)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#5-alleged"><span class="nav-number">1.3.1.</span> <span class="nav-text">5. alleged</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-all-right"><span class="nav-number">1.3.2.</span> <span class="nav-text">6. all right</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-4-2019-03-04-16-16-18-00-Pomo-Time-3"><span class="nav-number">1.4.</span> <span class="nav-text">Day 4 (2019.03.04 16:16 - 18:00, Pomo Time * 3)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#7-altogether"><span class="nav-number">1.4.1.</span> <span class="nav-text">7. altogether</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8-among"><span class="nav-number">1.4.2.</span> <span class="nav-text">8. among</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-5-2019-03-05-10-20-11-50-Pomo-Time-3"><span class="nav-number">1.5.</span> <span class="nav-text">Day 5 (2019.03.05 10:20 - 11:50 , Pomo Time * 3)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#9-assure"><span class="nav-number">1.5.1.</span> <span class="nav-text">9. assure</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#10-auger"><span class="nav-number">1.5.2.</span> <span class="nav-text">10. auger</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-6-2019-03-06-20-00-21-00-Pomo-Time-3"><span class="nav-number">1.6.</span> <span class="nav-text">Day 6 (2019.03.06 20:00 - 21:00 , Pomo Time * 3)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#11-augur"><span class="nav-number">1.6.1.</span> <span class="nav-text">11. augur</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#12-average"><span class="nav-number">1.6.2.</span> <span class="nav-text">12. average</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-7-2019-03-07-10-00-10-30-15-40-16-30-Pomo-Time-4"><span class="nav-number">1.7.</span> <span class="nav-text">Day 7 (2019.03.07 10:00 - 10:30, 15:40 - 16:30 , Pomo Time * 4)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#13-averse"><span class="nav-number">1.7.1.</span> <span class="nav-text">13. averse</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#14-between"><span class="nav-number">1.7.2.</span> <span class="nav-text">14. between</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-8-2019-03-08-15-30-17-00-Pomo-Time-3"><span class="nav-number">1.8.</span> <span class="nav-text">Day 8 (2019.03.08 15:30 - 17:00 , Pomo Time * 3)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#15-blatant"><span class="nav-number">1.8.1.</span> <span class="nav-text">15. blatant</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#16-capital"><span class="nav-number">1.8.2.</span> <span class="nav-text">16. capital</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-9-2019-03-09-10-30-10-50-Pomo-Time-1"><span class="nav-number">1.9.</span> <span class="nav-text">Day 9 (2019.03.09 10:30 - 10:50 , Pomo Time * 1)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#17-capitol"><span class="nav-number">1.9.1.</span> <span class="nav-text">17. capitol</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#18-complement"><span class="nav-number">1.9.2.</span> <span class="nav-text">18. complement</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-10-2019-03-10-22-00-22-20-Pomo-Time-1"><span class="nav-number">1.10.</span> <span class="nav-text">Day 10 (2019.03.10 22:00 - 22:20 , Pomo Time * 1)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#19-compliment"><span class="nav-number">1.10.1.</span> <span class="nav-text">19. compliment</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#20-comprise"><span class="nav-number">1.10.2.</span> <span class="nav-text">20. comprise</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-11-2019-03-11-17-40-18-10-Pomo-Time-1"><span class="nav-number">1.11.</span> <span class="nav-text">Day 11 (2019.03.11 17:40 - 18:10 , Pomo Time * 1)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#21-consul"><span class="nav-number">1.11.1.</span> <span class="nav-text">21. consul</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#22-con·vince"><span class="nav-number">1.11.2.</span> <span class="nav-text">22. con·vince</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-12-2019-03-12-16-53-17-40-Pomo-Time-2"><span class="nav-number">1.12.</span> <span class="nav-text">Day 12 (2019.03.12 16:53 - 17:40 , Pomo Time * 2)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#23-coun·cil"><span class="nav-number">1.12.1.</span> <span class="nav-text">23. coun·cil</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#24-coun·sel"><span class="nav-number">1.12.2.</span> <span class="nav-text">24. coun·sel</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-13-2019-03-13-16-40-17-30-Pomo-Time-1"><span class="nav-number">1.13.</span> <span class="nav-text">Day 13 (2019.03.13 16:40 -  17:30, Pomo Time * 1)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#25-dis·creet"><span class="nav-number">1.13.1.</span> <span class="nav-text">25. dis·creet</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#26-dis·crete"><span class="nav-number">1.13.2.</span> <span class="nav-text">26. dis·crete</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-14-2019-03-14-17-00-19-00-Pomo-Time-4"><span class="nav-number">1.14.</span> <span class="nav-text">Day 14 (2019.03.14 17:00 - 19:00 , Pomo Time * 4)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#27-dis·in·ter·est·ed"><span class="nav-number">1.14.1.</span> <span class="nav-text">27. dis·in·ter·est·ed</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#28-ef·fect"><span class="nav-number">1.14.2.</span> <span class="nav-text">28. ef·fect</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-16-2019-03-16-23-19-23-40-Pomo-Time-1"><span class="nav-number">1.15.</span> <span class="nav-text">Day 16 (2019.03.16 23:19 - 23.40 , Pomo Time *1 )</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#31-e·nor·mous·ness"><span class="nav-number">1.15.1.</span> <span class="nav-text">31. e·nor·mous·ness</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#32-en·sure"><span class="nav-number">1.15.2.</span> <span class="nav-text">32. en·sure</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-17-2019-03-17-23-00-23-30-Pomo-Time-1"><span class="nav-number">1.16.</span> <span class="nav-text">Day 17 (2019.03.17 23:00 -  23:30, Pomo Time * 1)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#33-fac·toid"><span class="nav-number">1.16.1.</span> <span class="nav-text">33. fac·toid</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#34-few·er"><span class="nav-number">1.16.2.</span> <span class="nav-text">34. few·er</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-20-2019-03-20-22-00-22-30-Pomo-Time-1"><span class="nav-number">1.17.</span> <span class="nav-text">Day 20 (2019.03.20 22:00 - 22:30 , Pomo Time * 1)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#39-for·te"><span class="nav-number">1.17.1.</span> <span class="nav-text">39. for·te</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#40-gen·der"><span class="nav-number">1.17.2.</span> <span class="nav-text">40. gen·der</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-21-2019-03-21-19-40-20-30-Pomo-Time-2-✅"><span class="nav-number">1.18.</span> <span class="nav-text">Day 21 (2019.03.21 19:40 - 20:30 , Pomo Time * 2) ✅</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#41-hope·ful·ly"><span class="nav-number">1.18.1.</span> <span class="nav-text">41. hope·ful·ly</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#42-im·pact"><span class="nav-number">1.18.2.</span> <span class="nav-text">42. im·pact</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-22-2019-03-22-23-15-23-35-Pomo-Time-1-✅"><span class="nav-number">1.19.</span> <span class="nav-text">Day 22 (2019.03.22 23:15 - 23:35 , Pomo Time * 1) ✅</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#43-im·peach"><span class="nav-number">1.19.1.</span> <span class="nav-text">43. im·peach</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#44-im·ply"><span class="nav-number">1.19.2.</span> <span class="nav-text">44. im·ply</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-23-2019-03-23-12-30-Pomo-Time-✅"><span class="nav-number">1.20.</span> <span class="nav-text">Day 23 (2019.03.23 12:30 -  , Pomo Time * ) ✅</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#45-in·cred·i·ble"><span class="nav-number">1.20.1.</span> <span class="nav-text">45. in·cred·i·ble</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#46-in·cred·u·lous"><span class="nav-number">1.20.2.</span> <span class="nav-text">46. in·cred·u·lous</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-24-2019-03-24-20-08-20-40-Pomo-Time-2-✅"><span class="nav-number">1.21.</span> <span class="nav-text">Day 24 (2019.03.24 20:08 - 20:40 , Pomo Time * 2) ✅</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#47-in·fer"><span class="nav-number">1.21.1.</span> <span class="nav-text">47. in·fer</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#48-in·flam·ma·ble"><span class="nav-number">1.21.2.</span> <span class="nav-text">48. in·flam·ma·ble</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-25-2019-03-25-10-26-12-00-Pomo-Time-4-✅"><span class="nav-number">1.22.</span> <span class="nav-text">Day 25 (2019.03.25 10:26 - 12:00, Pomo Time * 4) ✅</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#49-in·sure"><span class="nav-number">1.22.1.</span> <span class="nav-text">49. in·sure</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#50-i·ro·ny"><span class="nav-number">1.22.2.</span> <span class="nav-text">50. i·ro·ny</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-26-2019-03-26-19-32-19-53-Pomo-Time-1-✅"><span class="nav-number">1.23.</span> <span class="nav-text">Day 26 (2019.03.26 19:32 - 19:53, Pomo Time * 1) ✅</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#51-ir·re·gard·less"><span class="nav-number">1.23.1.</span> <span class="nav-text">51. ir·re·gard·less</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#52-its"><span class="nav-number">1.23.2.</span> <span class="nav-text">52. its</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-27-2019-03-27-22-16-22-26-Pomo-Time-0-✅"><span class="nav-number">1.24.</span> <span class="nav-text">Day 27 (2019.03.27 22:16 - 22:26 , Pomo Time * 0) ✅</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#53-it’s"><span class="nav-number">1.24.1.</span> <span class="nav-text">53. it’s</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#54-ku·dos"><span class="nav-number">1.24.2.</span> <span class="nav-text">54. ku·dos</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-28-2019-03-28-15-35-17-00-Pomo-Time-5-✅"><span class="nav-number">1.25.</span> <span class="nav-text">Day 28 (2019.03.28 15:35 - 17:00, Pomo Time * 5) ✅</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#55-lay"><span class="nav-number">1.25.1.</span> <span class="nav-text">55. lay</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#56-leave"><span class="nav-number">1.25.2.</span> <span class="nav-text">56. leave</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-29-2019-03-29-21-45-22-40-Pomo-Time-3-✅"><span class="nav-number">1.26.</span> <span class="nav-text">Day 29 (2019.03.29 21:45 - 22:40 , Pomo Time * 3) ✅</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#57-less"><span class="nav-number">1.26.1.</span> <span class="nav-text">57. less</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#58-let"><span class="nav-number">1.26.2.</span> <span class="nav-text">58. let</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-30-2019-03-30-19-04-19-41-Pomo-Time-2-✅"><span class="nav-number">1.27.</span> <span class="nav-text">Day 30 (2019.03.30 19:04 - 19:41 , Pomo Time * 2) ✅</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#59-lie"><span class="nav-number">1.27.1.</span> <span class="nav-text">59. lie</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#60-lit·er·al·ly"><span class="nav-number">1.27.2.</span> <span class="nav-text">60. lit·er·al·ly</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-31-2019-03-31-22-46-23-35-Pomo-Time-4"><span class="nav-number">1.28.</span> <span class="nav-text">Day 31 (2019.03.31 22:46 - 23:35, Pomo Time * 4)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#61-mass"><span class="nav-number">1.28.1.</span> <span class="nav-text">61. mass</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#62-mean"><span class="nav-number">1.28.2.</span> <span class="nav-text">62. mean</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-32-2019-04-01-22-34-23-00-Pomo-Time-1"><span class="nav-number">1.29.</span> <span class="nav-text">Day 32 (2019.04.01 22:34 - 23:00, Pomo Time * 1)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#63-me·di·an"><span class="nav-number">1.29.1.</span> <span class="nav-text">63. me·di·an</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#64-mis·chie·vous"><span class="nav-number">1.29.2.</span> <span class="nav-text">64. mis·chie·vous</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-33-2019-04-02-23-05-23-30-Pomo-Time-1"><span class="nav-number">1.30.</span> <span class="nav-text">Day 33 (2019.04.02 23:05 - 23:30 , Pomo Time * 1)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#65-nu·cle·ar"><span class="nav-number">1.30.1.</span> <span class="nav-text">65. nu·cle·ar</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#66-pa·ram·e·ter"><span class="nav-number">1.30.2.</span> <span class="nav-text">66. pa·ram·e·ter</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-34-2019-04-03-22-32-22-42-Pomo-Time-0"><span class="nav-number">1.31.</span> <span class="nav-text">Day 34 (2019.04.03 22:32 - 22:42 , Pomo Time * 0)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#67-pe·nul·ti·mate"><span class="nav-number">1.31.1.</span> <span class="nav-text">67. pe·nul·ti·mate</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#68-per·suade"><span class="nav-number">1.31.2.</span> <span class="nav-text">68. per·suade</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-35-2019-04-04-22-21-23-00-Pomo-Time-2"><span class="nav-number">1.32.</span> <span class="nav-text">Day 35 (2019.04.04 22:21 - 23:00 , Pomo Time * 2)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#69-pe·ruse"><span class="nav-number">1.32.1.</span> <span class="nav-text">69. pe·ruse</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#70-phe·nom·e·non"><span class="nav-number">1.32.2.</span> <span class="nav-text">70. phe·nom·e·non</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-36-2019-04-05-22-27-23-18-Pomo-Time-4"><span class="nav-number">1.33.</span> <span class="nav-text">Day 36 (2019.04.05 22:27 - 23:18, Pomo Time * 4)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#71-plus"><span class="nav-number">1.33.1.</span> <span class="nav-text">71. plus</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#72-pre·cip·i·tate"><span class="nav-number">1.33.2.</span> <span class="nav-text">72. pre·cip·i·tate</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-37-2019-04-06-23-13-23-23-Pomo-Time-0"><span class="nav-number">1.34.</span> <span class="nav-text">Day 37 (2019.04.06 23:13 - 23:23, Pomo Time * 0)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#73-pre·cip·i·tous"><span class="nav-number">1.34.1.</span> <span class="nav-text">73. pre·cip·i·tous</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#74-pre·scribe"><span class="nav-number">1.34.2.</span> <span class="nav-text">74. pre·scribe</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-38-2019-04-07-23-09-23-36-Pomo-Time-1"><span class="nav-number">1.35.</span> <span class="nav-text">Day 38 (2019.04.07 23:09 - 23:36, Pomo Time * 1)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#75-pres·ent·ly"><span class="nav-number">1.35.1.</span> <span class="nav-text">75. pres·ent·ly</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#76-prin·ci·pal"><span class="nav-number">1.35.2.</span> <span class="nav-text">76. prin·ci·pal</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-39-2019-04-08-23-00-23-28-Pomo-Time"><span class="nav-number">1.36.</span> <span class="nav-text">Day 39 (2019.04.08 23:00 - 23:28, Pomo Time * )</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#78-pro·scribe"><span class="nav-number">1.36.1.</span> <span class="nav-text">78. pro·scribe</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#79-renown"><span class="nav-number">1.36.2.</span> <span class="nav-text">79. renown</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-40-2019-04-09-21-43-22-00-Pomo-Time-1"><span class="nav-number">1.37.</span> <span class="nav-text">Day 40 (2019.04.09 21:43 - 22:00, Pomo Time * 1)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#81-sac·ri·le·gious"><span class="nav-number">1.37.1.</span> <span class="nav-text">81. sac·ri·le·gious</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#82-sea·son·a·ble"><span class="nav-number">1.37.2.</span> <span class="nav-text">82. sea·son·a·ble</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-41-2019-04-10-23-00-23-15-Pomo-Time-0"><span class="nav-number">1.38.</span> <span class="nav-text">Day 41 (2019.04.10 23:00 - 23:15, Pomo Time * 0)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#83-sea·son·al"><span class="nav-number">1.38.1.</span> <span class="nav-text">83. sea·son·al</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#84-sen·su·al"><span class="nav-number">1.38.2.</span> <span class="nav-text">84. sen·su·al</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-42-2019-04-11-22-35-23-29-Pomo-Time-4"><span class="nav-number">1.39.</span> <span class="nav-text">Day 42 (2019.04.11 22:35 - 23:29, Pomo Time * 4)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#85-sen·su·ous"><span class="nav-number">1.39.1.</span> <span class="nav-text">85. sen·su·ous</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#86-set"><span class="nav-number">1.39.2.</span> <span class="nav-text">86. set</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-43-2019-04-12-21-34-22-34-Pomo-Time-4"><span class="nav-number">1.40.</span> <span class="nav-text">Day 43 (2019.04.12 21:34 - 22:34, Pomo Time * 4)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#87-sex"><span class="nav-number">1.40.1.</span> <span class="nav-text">87. sex</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#88-sit"><span class="nav-number">1.40.2.</span> <span class="nav-text">88. sit</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-44-2019-04-13-22-06-23-06-Pomo-Time-4"><span class="nav-number">1.41.</span> <span class="nav-text">Day 44 (2019.04.13 22:06 - 23:06, Pomo Time * 4)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#89-that"><span class="nav-number">1.41.1.</span> <span class="nav-text">89. that</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#90-un·ex·cep·tion·a·ble"><span class="nav-number">1.41.2.</span> <span class="nav-text">90.  un·ex·cep·tion·a·ble</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-45-2019-04-14-22-32-23-08-Pomo-Time-2"><span class="nav-number">1.42.</span> <span class="nav-text">Day 45 (2019.04.14 22:32 - 23:08, Pomo Time * 2)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#91-un·ex·cep·tion·al"><span class="nav-number">1.42.1.</span> <span class="nav-text">91. un·ex·cep·tion·al</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#92-un·in·ter·est·ed"><span class="nav-number">1.42.2.</span> <span class="nav-text">92. un·in·ter·est·ed</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-46-2019-04-15-22-43-23-03-Pomo-Time-1"><span class="nav-number">1.43.</span> <span class="nav-text">Day 46 (2019.04.15 22:43 - 23:03, Pomo Time * 1)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#93-u·nique"><span class="nav-number">1.43.1.</span> <span class="nav-text">93. u·nique</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#94-u·til·ize"><span class="nav-number">1.43.2.</span> <span class="nav-text">94. u·til·ize</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-47-2019-04-16-23-18-23-44-Pomo-Time-2"><span class="nav-number">1.44.</span> <span class="nav-text">Day 47 (2019.04.16 23:18 - 23:44, Pomo Time * 2)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#95-weight"><span class="nav-number">1.44.1.</span> <span class="nav-text">95. weight</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#96-where·fore"><span class="nav-number">1.44.2.</span> <span class="nav-text">96. where·fore</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-48-2019-04-17-21-12-22-12-Pomo-Time-4"><span class="nav-number">1.45.</span> <span class="nav-text">Day 48 (2019.04.17 21:12 - 22:12, Pomo Time * 4)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#97-which"><span class="nav-number">1.45.1.</span> <span class="nav-text">97. which</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-49-2019-04-18-22-35-22-50-Pomo-Time-1"><span class="nav-number">1.46.</span> <span class="nav-text">Day 49 (2019.04.18 22:35 - 22:50, Pomo Time * 1)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#98-wreak"><span class="nav-number">1.46.1.</span> <span class="nav-text">98. wreak</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-50-2019-04-19-23-20-23-40-Pomo-Time-1"><span class="nav-number">1.47.</span> <span class="nav-text">Day 50 (2019.04.19 23:20 - 23:40, Pomo Time * 1)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#99-wreck"><span class="nav-number">1.47.1.</span> <span class="nav-text">99. wreck</span></a></li></ol></li></ol></li></ol></div>
+        </section>
+        <!--/noindex-->
+
+        <section class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Chandler-Lu</p>
+  <div class="site-description" itemprop="description">这是我的私人博客，用于分享平时学习生活中的一些心得。能力有限，请多指教(=^･^=)</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">24</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">31</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="mailto:trlu.social@outlook.com" title="E-Mail → mailto:trlu.social@outlook.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://space.bilibili.com/1908825" title="Bilibili → https:&#x2F;&#x2F;space.bilibili.com&#x2F;1908825" rel="noopener" target="_blank"><i class="fa fa-bold fa-fw"></i>Bilibili</a>
+      </span>
+  </div>
+
+
+
+        </section>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
     </header>
 
     
@@ -162,23 +251,28 @@
     <span>0%</span>
   </div>
 
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
 
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
 
-          <div class="content post posts-expand">
-            
+    <div class="main-inner post posts-expand">
+      
 
-    
+      
+
+  
+
+
+<div class="post-block">
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://www.yeslu.cn/archives/1dbbbd73.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="image" content="/images/avatar.gif">
       <meta itemprop="name" content="Chandler-Lu">
       <meta itemprop="description" content="这是我的私人博客，用于分享平时学习生活中的一些心得。能力有限，请多指教(=^･^=)">
     </span>
@@ -191,61 +285,51 @@
           XDF-百日行动派（Day 1 - Day 50）
         </h1>
 
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2019-05-20 22:44:12" itemprop="dateCreated datePublished" datetime="2019-05-20T22:44:12+08:00">2019-05-20</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-12-08 15:09:43" itemprop="dateModified" datetime="2019-12-08T15:09:43+08:00">2019-12-08</time>
-              </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E8%AF%AD%E8%A8%80/" itemprop="url" rel="index"><span itemprop="name">语言</span></a>
-                </span>
-            </span>
-
-          
-  
-  <span class="post-meta-item">
-    
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
       <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
+        <i class="far fa-calendar"></i>
       </span>
-      <span class="post-meta-item-text">Valine：</span>
-    
-    <a title="valine" href="/archives/1dbbbd73.html#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/archives/1dbbbd73.html" itemprop="commentCount"></span>
-    </a>
-  </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2019-05-20 22:44:12" itemprop="dateCreated datePublished" datetime="2019-05-20T22:44:12+08:00">2019-05-20</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2019-12-08 15:09:43" itemprop="dateModified" datetime="2019-12-08T15:09:43+08:00">2019-12-08</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E8%AF%AD%E8%A8%80/" itemprop="url" rel="index"><span itemprop="name">语言</span></a>
+        </span>
+    </span>
+
   
-  <br>
-            <span class="post-meta-item" title="本文字数">
-              <span class="post-meta-item-icon">
-                <i class="far fa-file-word"></i>
-              </span>
-                <span class="post-meta-item-text">本文字数：</span>
-              <span>76k</span>
-            </span>
-            <span class="post-meta-item" title="阅读时长">
-              <span class="post-meta-item-icon">
-                <i class="far fa-clock"></i>
-              </span>
-                <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>1:09</span>
-            </span>
+      </div>
+      <div class="post-meta">
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>76k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1:09</span>
+    </span>
+</div>
 
         </div>
       </header>
@@ -254,8 +338,6 @@
     
     
     <div class="post-body" itemprop="articleBody">
-
-      
         <h2 id="《100-Words-Almost-Everyone-Confuses》"><a href="#《100-Words-Almost-Everyone-Confuses》" class="headerlink" title="《100 Words Almost Everyone Confuses》"></a>《100 Words Almost Everyone Confuses》</h2><h3 id="Day-1-2019-03-01-11-00-13-00-Pomo-Time-5"><a href="#Day-1-2019-03-01-11-00-13-00-Pomo-Time-5" class="headerlink" title="Day 1 (2019.03.01 11:00 - 13:00, Pomo Time * 5)"></a>Day 1 (2019.03.01 11:00 - 13:00, Pomo Time * 5)</h3><h4 id="1-adverse"><a href="#1-adverse" class="headerlink" title="1. adverse"></a>1. adverse</h4><ul>
 <li>Oxford: adj. 不利的；有害的；反面的</li>
 <li>关系词汇<ul>
@@ -2997,30 +3079,18 @@
     
     
     
-        <div class="reward-container">
-  <div></div>
-  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
-    打赏
-  </button>
-  <div id="qr" style="display: none;">
-      <div style="display: inline-block;">
-        <img src="/images/pay_merger.png" alt="Chandler-Lu Donate Me">
-        <p>Donate Me</p>
-      </div>
 
-  </div>
-</div>
+    <footer class="post-footer">
+          
 
-        
-
-<div>
-<ul class="post-copyright">
+<div class="post-copyright">
+<ul>
   <li class="post-copyright-author">
-    <strong>本文作者： </strong>Chandler-Lu
+      <strong>本文作者： </strong>Chandler-Lu
   </li>
   <li class="post-copyright-link">
-    <strong>本文链接：</strong>
-    <a href="https://www.yeslu.cn/archives/1dbbbd73.html" title="XDF-百日行动派（Day 1 - Day 50）">https://www.yeslu.cn/archives/1dbbbd73.html</a>
+      <strong>本文链接：</strong>
+      <a href="https://www.yeslu.cn/archives/1dbbbd73.html" title="XDF-百日行动派（Day 1 - Day 50）">https://www.yeslu.cn/archives/1dbbbd73.html</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
@@ -3028,59 +3098,53 @@
 </ul>
 </div>
 
-        
+          <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
 
-  <div class="followme">
-    <p>欢迎关注我的其它发布渠道</p>
+  <div class="social-list">
 
-    <div class="social-list">
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="/images/qq.png">
+          <span class="icon">
+            <i class="fab fa-qq"></i>
+          </span>
 
-        <div class="social-item">
-          <a target="_blank" class="social-link" href="/images/qq.png">
-            <span class="icon">
-              <i class="fab fa-qq"></i>
-            </span>
-
-            <span class="label">QQ</span>
-          </a>
-        </div>
-    </div>
+          <span class="label">QQ</span>
+        </a>
+      </div>
   </div>
+</div>
 
-
-      <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E8%8B%B1%E8%AF%AD/" rel="tag"># 英语</a>
               <a href="/tags/%E8%AF%8D%E6%B1%87/" rel="tag"># 词汇</a>
+              <a href="/tags/%E8%8B%B1%E8%AF%AD/" rel="tag"># 英语</a>
               <a href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag"># 学习</a>
           </div>
 
         
 
-
-        
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/archives/fe52f564.html" rel="prev" title="工作流：贵重商品购置">
-      <i class="fa fa-chevron-left"></i> 工作流：贵重商品购置
-    </a></div>
-      <div class="post-nav-item">
-    <a href="/archives/dcc4cb4a.html" rel="next" title="论文实用干货：总目录">
-      论文实用干货：总目录 <i class="fa fa-chevron-right"></i>
-    </a></div>
-    </div>
-      </footer>
-    
-  </article>
-  
-  
-  
-
-
-
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/archives/fe52f564.html" rel="prev" title="工作流：贵重商品购置">
+                  <i class="fa fa-chevron-left"></i> 工作流：贵重商品购置
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/archives/dcc4cb4a.html" rel="next" title="论文实用干货：总目录">
+                  论文实用干货：总目录 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
           </div>
-          
-    <div class="comments" id="valine-comments"></div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+      
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -3089,7 +3153,7 @@
       activeClass = localStorage.getItem('comments_active') || activeClass;
     }
     if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      const activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
       if (activeTab) {
         activeTab.click();
       }
@@ -3098,96 +3162,21 @@
   if (CONFIG.comments.storage) {
     window.addEventListener('tabs:click', event => {
       if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
+      const commentClass = event.target.classList[1];
       localStorage.setItem('comments_active', commentClass);
     });
   }
 </script>
 
-        </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
-
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          文章目录
-        </li>
-        <li class="sidebar-nav-overview">
-          站点概览
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#《100-Words-Almost-Everyone-Confuses》"><span class="nav-number">1.</span> <span class="nav-text">《100 Words Almost Everyone Confuses》</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-1-2019-03-01-11-00-13-00-Pomo-Time-5"><span class="nav-number">1.1.</span> <span class="nav-text">Day 1 (2019.03.01 11:00 - 13:00, Pomo Time * 5)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-adverse"><span class="nav-number">1.1.1.</span> <span class="nav-text">1. adverse</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-affect-1"><span class="nav-number">1.1.2.</span> <span class="nav-text">2. affect(1)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-2-2019-03-02-12-00-13-00-Pomo-Time-3"><span class="nav-number">1.2.</span> <span class="nav-text">Day 2 (2019.03.02 12:00 - 13:00, Pomo Time * 3)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#3-affect-2"><span class="nav-number">1.2.1.</span> <span class="nav-text">3. affect(2)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-aggravate"><span class="nav-number">1.2.2.</span> <span class="nav-text">4. aggravate</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-3-2019-03-03-19-40-20-50-Pomo-Time-2"><span class="nav-number">1.3.</span> <span class="nav-text">Day 3 (2019.03.03 19:40 - 20:50, Pomo Time * 2)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#5-alleged"><span class="nav-number">1.3.1.</span> <span class="nav-text">5. alleged</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-all-right"><span class="nav-number">1.3.2.</span> <span class="nav-text">6. all right</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-4-2019-03-04-16-16-18-00-Pomo-Time-3"><span class="nav-number">1.4.</span> <span class="nav-text">Day 4 (2019.03.04 16:16 - 18:00, Pomo Time * 3)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#7-altogether"><span class="nav-number">1.4.1.</span> <span class="nav-text">7. altogether</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8-among"><span class="nav-number">1.4.2.</span> <span class="nav-text">8. among</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-5-2019-03-05-10-20-11-50-Pomo-Time-3"><span class="nav-number">1.5.</span> <span class="nav-text">Day 5 (2019.03.05 10:20 - 11:50 , Pomo Time * 3)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#9-assure"><span class="nav-number">1.5.1.</span> <span class="nav-text">9. assure</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#10-auger"><span class="nav-number">1.5.2.</span> <span class="nav-text">10. auger</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-6-2019-03-06-20-00-21-00-Pomo-Time-3"><span class="nav-number">1.6.</span> <span class="nav-text">Day 6 (2019.03.06 20:00 - 21:00 , Pomo Time * 3)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#11-augur"><span class="nav-number">1.6.1.</span> <span class="nav-text">11. augur</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#12-average"><span class="nav-number">1.6.2.</span> <span class="nav-text">12. average</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-7-2019-03-07-10-00-10-30-15-40-16-30-Pomo-Time-4"><span class="nav-number">1.7.</span> <span class="nav-text">Day 7 (2019.03.07 10:00 - 10:30, 15:40 - 16:30 , Pomo Time * 4)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#13-averse"><span class="nav-number">1.7.1.</span> <span class="nav-text">13. averse</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#14-between"><span class="nav-number">1.7.2.</span> <span class="nav-text">14. between</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-8-2019-03-08-15-30-17-00-Pomo-Time-3"><span class="nav-number">1.8.</span> <span class="nav-text">Day 8 (2019.03.08 15:30 - 17:00 , Pomo Time * 3)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#15-blatant"><span class="nav-number">1.8.1.</span> <span class="nav-text">15. blatant</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#16-capital"><span class="nav-number">1.8.2.</span> <span class="nav-text">16. capital</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-9-2019-03-09-10-30-10-50-Pomo-Time-1"><span class="nav-number">1.9.</span> <span class="nav-text">Day 9 (2019.03.09 10:30 - 10:50 , Pomo Time * 1)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#17-capitol"><span class="nav-number">1.9.1.</span> <span class="nav-text">17. capitol</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#18-complement"><span class="nav-number">1.9.2.</span> <span class="nav-text">18. complement</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-10-2019-03-10-22-00-22-20-Pomo-Time-1"><span class="nav-number">1.10.</span> <span class="nav-text">Day 10 (2019.03.10 22:00 - 22:20 , Pomo Time * 1)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#19-compliment"><span class="nav-number">1.10.1.</span> <span class="nav-text">19. compliment</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#20-comprise"><span class="nav-number">1.10.2.</span> <span class="nav-text">20. comprise</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-11-2019-03-11-17-40-18-10-Pomo-Time-1"><span class="nav-number">1.11.</span> <span class="nav-text">Day 11 (2019.03.11 17:40 - 18:10 , Pomo Time * 1)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#21-consul"><span class="nav-number">1.11.1.</span> <span class="nav-text">21. consul</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#22-con·vince"><span class="nav-number">1.11.2.</span> <span class="nav-text">22. con·vince</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-12-2019-03-12-16-53-17-40-Pomo-Time-2"><span class="nav-number">1.12.</span> <span class="nav-text">Day 12 (2019.03.12 16:53 - 17:40 , Pomo Time * 2)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#23-coun·cil"><span class="nav-number">1.12.1.</span> <span class="nav-text">23. coun·cil</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#24-coun·sel"><span class="nav-number">1.12.2.</span> <span class="nav-text">24. coun·sel</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-13-2019-03-13-16-40-17-30-Pomo-Time-1"><span class="nav-number">1.13.</span> <span class="nav-text">Day 13 (2019.03.13 16:40 -  17:30, Pomo Time * 1)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#25-dis·creet"><span class="nav-number">1.13.1.</span> <span class="nav-text">25. dis·creet</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#26-dis·crete"><span class="nav-number">1.13.2.</span> <span class="nav-text">26. dis·crete</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-14-2019-03-14-17-00-19-00-Pomo-Time-4"><span class="nav-number">1.14.</span> <span class="nav-text">Day 14 (2019.03.14 17:00 - 19:00 , Pomo Time * 4)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#27-dis·in·ter·est·ed"><span class="nav-number">1.14.1.</span> <span class="nav-text">27. dis·in·ter·est·ed</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#28-ef·fect"><span class="nav-number">1.14.2.</span> <span class="nav-text">28. ef·fect</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-16-2019-03-16-23-19-23-40-Pomo-Time-1"><span class="nav-number">1.15.</span> <span class="nav-text">Day 16 (2019.03.16 23:19 - 23.40 , Pomo Time *1 )</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#31-e·nor·mous·ness"><span class="nav-number">1.15.1.</span> <span class="nav-text">31. e·nor·mous·ness</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#32-en·sure"><span class="nav-number">1.15.2.</span> <span class="nav-text">32. en·sure</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-17-2019-03-17-23-00-23-30-Pomo-Time-1"><span class="nav-number">1.16.</span> <span class="nav-text">Day 17 (2019.03.17 23:00 -  23:30, Pomo Time * 1)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#33-fac·toid"><span class="nav-number">1.16.1.</span> <span class="nav-text">33. fac·toid</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#34-few·er"><span class="nav-number">1.16.2.</span> <span class="nav-text">34. few·er</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-20-2019-03-20-22-00-22-30-Pomo-Time-1"><span class="nav-number">1.17.</span> <span class="nav-text">Day 20 (2019.03.20 22:00 - 22:30 , Pomo Time * 1)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#39-for·te"><span class="nav-number">1.17.1.</span> <span class="nav-text">39. for·te</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#40-gen·der"><span class="nav-number">1.17.2.</span> <span class="nav-text">40. gen·der</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-21-2019-03-21-19-40-20-30-Pomo-Time-2-✅"><span class="nav-number">1.18.</span> <span class="nav-text">Day 21 (2019.03.21 19:40 - 20:30 , Pomo Time * 2) ✅</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#41-hope·ful·ly"><span class="nav-number">1.18.1.</span> <span class="nav-text">41. hope·ful·ly</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#42-im·pact"><span class="nav-number">1.18.2.</span> <span class="nav-text">42. im·pact</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-22-2019-03-22-23-15-23-35-Pomo-Time-1-✅"><span class="nav-number">1.19.</span> <span class="nav-text">Day 22 (2019.03.22 23:15 - 23:35 , Pomo Time * 1) ✅</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#43-im·peach"><span class="nav-number">1.19.1.</span> <span class="nav-text">43. im·peach</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#44-im·ply"><span class="nav-number">1.19.2.</span> <span class="nav-text">44. im·ply</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-23-2019-03-23-12-30-Pomo-Time-✅"><span class="nav-number">1.20.</span> <span class="nav-text">Day 23 (2019.03.23 12:30 -  , Pomo Time * ) ✅</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#45-in·cred·i·ble"><span class="nav-number">1.20.1.</span> <span class="nav-text">45. in·cred·i·ble</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#46-in·cred·u·lous"><span class="nav-number">1.20.2.</span> <span class="nav-text">46. in·cred·u·lous</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-24-2019-03-24-20-08-20-40-Pomo-Time-2-✅"><span class="nav-number">1.21.</span> <span class="nav-text">Day 24 (2019.03.24 20:08 - 20:40 , Pomo Time * 2) ✅</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#47-in·fer"><span class="nav-number">1.21.1.</span> <span class="nav-text">47. in·fer</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#48-in·flam·ma·ble"><span class="nav-number">1.21.2.</span> <span class="nav-text">48. in·flam·ma·ble</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-25-2019-03-25-10-26-12-00-Pomo-Time-4-✅"><span class="nav-number">1.22.</span> <span class="nav-text">Day 25 (2019.03.25 10:26 - 12:00, Pomo Time * 4) ✅</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#49-in·sure"><span class="nav-number">1.22.1.</span> <span class="nav-text">49. in·sure</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#50-i·ro·ny"><span class="nav-number">1.22.2.</span> <span class="nav-text">50. i·ro·ny</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-26-2019-03-26-19-32-19-53-Pomo-Time-1-✅"><span class="nav-number">1.23.</span> <span class="nav-text">Day 26 (2019.03.26 19:32 - 19:53, Pomo Time * 1) ✅</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#51-ir·re·gard·less"><span class="nav-number">1.23.1.</span> <span class="nav-text">51. ir·re·gard·less</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#52-its"><span class="nav-number">1.23.2.</span> <span class="nav-text">52. its</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-27-2019-03-27-22-16-22-26-Pomo-Time-0-✅"><span class="nav-number">1.24.</span> <span class="nav-text">Day 27 (2019.03.27 22:16 - 22:26 , Pomo Time * 0) ✅</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#53-it’s"><span class="nav-number">1.24.1.</span> <span class="nav-text">53. it’s</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#54-ku·dos"><span class="nav-number">1.24.2.</span> <span class="nav-text">54. ku·dos</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-28-2019-03-28-15-35-17-00-Pomo-Time-5-✅"><span class="nav-number">1.25.</span> <span class="nav-text">Day 28 (2019.03.28 15:35 - 17:00, Pomo Time * 5) ✅</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#55-lay"><span class="nav-number">1.25.1.</span> <span class="nav-text">55. lay</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#56-leave"><span class="nav-number">1.25.2.</span> <span class="nav-text">56. leave</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-29-2019-03-29-21-45-22-40-Pomo-Time-3-✅"><span class="nav-number">1.26.</span> <span class="nav-text">Day 29 (2019.03.29 21:45 - 22:40 , Pomo Time * 3) ✅</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#57-less"><span class="nav-number">1.26.1.</span> <span class="nav-text">57. less</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#58-let"><span class="nav-number">1.26.2.</span> <span class="nav-text">58. let</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-30-2019-03-30-19-04-19-41-Pomo-Time-2-✅"><span class="nav-number">1.27.</span> <span class="nav-text">Day 30 (2019.03.30 19:04 - 19:41 , Pomo Time * 2) ✅</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#59-lie"><span class="nav-number">1.27.1.</span> <span class="nav-text">59. lie</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#60-lit·er·al·ly"><span class="nav-number">1.27.2.</span> <span class="nav-text">60. lit·er·al·ly</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-31-2019-03-31-22-46-23-35-Pomo-Time-4"><span class="nav-number">1.28.</span> <span class="nav-text">Day 31 (2019.03.31 22:46 - 23:35, Pomo Time * 4)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#61-mass"><span class="nav-number">1.28.1.</span> <span class="nav-text">61. mass</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#62-mean"><span class="nav-number">1.28.2.</span> <span class="nav-text">62. mean</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-32-2019-04-01-22-34-23-00-Pomo-Time-1"><span class="nav-number">1.29.</span> <span class="nav-text">Day 32 (2019.04.01 22:34 - 23:00, Pomo Time * 1)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#63-me·di·an"><span class="nav-number">1.29.1.</span> <span class="nav-text">63. me·di·an</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#64-mis·chie·vous"><span class="nav-number">1.29.2.</span> <span class="nav-text">64. mis·chie·vous</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-33-2019-04-02-23-05-23-30-Pomo-Time-1"><span class="nav-number">1.30.</span> <span class="nav-text">Day 33 (2019.04.02 23:05 - 23:30 , Pomo Time * 1)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#65-nu·cle·ar"><span class="nav-number">1.30.1.</span> <span class="nav-text">65. nu·cle·ar</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#66-pa·ram·e·ter"><span class="nav-number">1.30.2.</span> <span class="nav-text">66. pa·ram·e·ter</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-34-2019-04-03-22-32-22-42-Pomo-Time-0"><span class="nav-number">1.31.</span> <span class="nav-text">Day 34 (2019.04.03 22:32 - 22:42 , Pomo Time * 0)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#67-pe·nul·ti·mate"><span class="nav-number">1.31.1.</span> <span class="nav-text">67. pe·nul·ti·mate</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#68-per·suade"><span class="nav-number">1.31.2.</span> <span class="nav-text">68. per·suade</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-35-2019-04-04-22-21-23-00-Pomo-Time-2"><span class="nav-number">1.32.</span> <span class="nav-text">Day 35 (2019.04.04 22:21 - 23:00 , Pomo Time * 2)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#69-pe·ruse"><span class="nav-number">1.32.1.</span> <span class="nav-text">69. pe·ruse</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#70-phe·nom·e·non"><span class="nav-number">1.32.2.</span> <span class="nav-text">70. phe·nom·e·non</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-36-2019-04-05-22-27-23-18-Pomo-Time-4"><span class="nav-number">1.33.</span> <span class="nav-text">Day 36 (2019.04.05 22:27 - 23:18, Pomo Time * 4)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#71-plus"><span class="nav-number">1.33.1.</span> <span class="nav-text">71. plus</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#72-pre·cip·i·tate"><span class="nav-number">1.33.2.</span> <span class="nav-text">72. pre·cip·i·tate</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-37-2019-04-06-23-13-23-23-Pomo-Time-0"><span class="nav-number">1.34.</span> <span class="nav-text">Day 37 (2019.04.06 23:13 - 23:23, Pomo Time * 0)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#73-pre·cip·i·tous"><span class="nav-number">1.34.1.</span> <span class="nav-text">73. pre·cip·i·tous</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#74-pre·scribe"><span class="nav-number">1.34.2.</span> <span class="nav-text">74. pre·scribe</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-38-2019-04-07-23-09-23-36-Pomo-Time-1"><span class="nav-number">1.35.</span> <span class="nav-text">Day 38 (2019.04.07 23:09 - 23:36, Pomo Time * 1)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#75-pres·ent·ly"><span class="nav-number">1.35.1.</span> <span class="nav-text">75. pres·ent·ly</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#76-prin·ci·pal"><span class="nav-number">1.35.2.</span> <span class="nav-text">76. prin·ci·pal</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-39-2019-04-08-23-00-23-28-Pomo-Time"><span class="nav-number">1.36.</span> <span class="nav-text">Day 39 (2019.04.08 23:00 - 23:28, Pomo Time * )</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#78-pro·scribe"><span class="nav-number">1.36.1.</span> <span class="nav-text">78. pro·scribe</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#79-renown"><span class="nav-number">1.36.2.</span> <span class="nav-text">79. renown</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-40-2019-04-09-21-43-22-00-Pomo-Time-1"><span class="nav-number">1.37.</span> <span class="nav-text">Day 40 (2019.04.09 21:43 - 22:00, Pomo Time * 1)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#81-sac·ri·le·gious"><span class="nav-number">1.37.1.</span> <span class="nav-text">81. sac·ri·le·gious</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#82-sea·son·a·ble"><span class="nav-number">1.37.2.</span> <span class="nav-text">82. sea·son·a·ble</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-41-2019-04-10-23-00-23-15-Pomo-Time-0"><span class="nav-number">1.38.</span> <span class="nav-text">Day 41 (2019.04.10 23:00 - 23:15, Pomo Time * 0)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#83-sea·son·al"><span class="nav-number">1.38.1.</span> <span class="nav-text">83. sea·son·al</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#84-sen·su·al"><span class="nav-number">1.38.2.</span> <span class="nav-text">84. sen·su·al</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-42-2019-04-11-22-35-23-29-Pomo-Time-4"><span class="nav-number">1.39.</span> <span class="nav-text">Day 42 (2019.04.11 22:35 - 23:29, Pomo Time * 4)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#85-sen·su·ous"><span class="nav-number">1.39.1.</span> <span class="nav-text">85. sen·su·ous</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#86-set"><span class="nav-number">1.39.2.</span> <span class="nav-text">86. set</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-43-2019-04-12-21-34-22-34-Pomo-Time-4"><span class="nav-number">1.40.</span> <span class="nav-text">Day 43 (2019.04.12 21:34 - 22:34, Pomo Time * 4)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#87-sex"><span class="nav-number">1.40.1.</span> <span class="nav-text">87. sex</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#88-sit"><span class="nav-number">1.40.2.</span> <span class="nav-text">88. sit</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-44-2019-04-13-22-06-23-06-Pomo-Time-4"><span class="nav-number">1.41.</span> <span class="nav-text">Day 44 (2019.04.13 22:06 - 23:06, Pomo Time * 4)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#89-that"><span class="nav-number">1.41.1.</span> <span class="nav-text">89. that</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#90-un·ex·cep·tion·a·ble"><span class="nav-number">1.41.2.</span> <span class="nav-text">90.  un·ex·cep·tion·a·ble</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-45-2019-04-14-22-32-23-08-Pomo-Time-2"><span class="nav-number">1.42.</span> <span class="nav-text">Day 45 (2019.04.14 22:32 - 23:08, Pomo Time * 2)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#91-un·ex·cep·tion·al"><span class="nav-number">1.42.1.</span> <span class="nav-text">91. un·ex·cep·tion·al</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#92-un·in·ter·est·ed"><span class="nav-number">1.42.2.</span> <span class="nav-text">92. un·in·ter·est·ed</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-46-2019-04-15-22-43-23-03-Pomo-Time-1"><span class="nav-number">1.43.</span> <span class="nav-text">Day 46 (2019.04.15 22:43 - 23:03, Pomo Time * 1)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#93-u·nique"><span class="nav-number">1.43.1.</span> <span class="nav-text">93. u·nique</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#94-u·til·ize"><span class="nav-number">1.43.2.</span> <span class="nav-text">94. u·til·ize</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-47-2019-04-16-23-18-23-44-Pomo-Time-2"><span class="nav-number">1.44.</span> <span class="nav-text">Day 47 (2019.04.16 23:18 - 23:44, Pomo Time * 2)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#95-weight"><span class="nav-number">1.44.1.</span> <span class="nav-text">95. weight</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#96-where·fore"><span class="nav-number">1.44.2.</span> <span class="nav-text">96. where·fore</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-48-2019-04-17-21-12-22-12-Pomo-Time-4"><span class="nav-number">1.45.</span> <span class="nav-text">Day 48 (2019.04.17 21:12 - 22:12, Pomo Time * 4)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#97-which"><span class="nav-number">1.45.1.</span> <span class="nav-text">97. which</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-49-2019-04-18-22-35-22-50-Pomo-Time-1"><span class="nav-number">1.46.</span> <span class="nav-text">Day 49 (2019.04.18 22:35 - 22:50, Pomo Time * 1)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#98-wreak"><span class="nav-number">1.46.1.</span> <span class="nav-text">98. wreak</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Day-50-2019-04-19-23-20-23-40-Pomo-Time-1"><span class="nav-number">1.47.</span> <span class="nav-text">Day 50 (2019.04.19 23:20 - 23:40, Pomo Time * 1)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#99-wreck"><span class="nav-number">1.47.1.</span> <span class="nav-text">99. wreck</span></a></li></ol></li></ol></li></ol></div>
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <img class="site-author-image" itemprop="image" alt="Chandler-Lu"
-      src="/images/avatar.png">
-  <p class="site-author-name" itemprop="name">Chandler-Lu</p>
-  <div class="site-description" itemprop="description">这是我的私人博客，用于分享平时学习生活中的一些心得。能力有限，请多指教(=^･^=)</div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">24</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
-      </div>
-      <div class="site-state-item site-state-categories">
-            <a href="/categories/">
-          
-        <span class="site-state-item-count">5</span>
-        <span class="site-state-item-name">分类</span></a>
-      </div>
-      <div class="site-state-item site-state-tags">
-            <a href="/tags/">
-          
-        <span class="site-state-item-count">31</span>
-        <span class="site-state-item-name">标签</span></a>
-      </div>
-  </nav>
-</div>
-  <div class="links-of-author motion-element">
-      <span class="links-of-author-item">
-        <a href="mailto:trlu.social@outlook.com" title="E-Mail → mailto:trlu.social@outlook.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
-      </span>
-      <span class="links-of-author-item">
-        <a href="https://space.bilibili.com/1908825" title="Bilibili → https:&#x2F;&#x2F;space.bilibili.com&#x2F;1908825" rel="noopener" target="_blank"><i class="fa fa-bold fa-fw"></i>Bilibili</a>
-      </span>
-  </div>
-
-
-
-      </div>
-
     </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
+  </main>
 
+  <footer class="footer">
+    <div class="footer-inner">
+      
 
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
-  <div class="beian"><a href="http://www.beian.miit.gov.cn/" rel="noopener" target="_blank">皖ICP备16003997号 </a>
+      
+  <div class="beian"><a href="https://beian.miit.gov.cn/" rel="noopener" target="_blank">皖ICP备16003997号 </a>
   </div>
 
 <div class="copyright">
@@ -3195,81 +3184,45 @@
   &copy; 
   <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
-    <i class="fa fa-user"></i>
+    <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">Chandler-Lu</span>
-    <span class="post-meta-divider">|</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
     <span class="post-meta-item-icon">
-      <i class="fa fa-chart-area"></i>
+      <i class="fa fa-chart-line"></i>
     </span>
     <span title="站点总字数">129k</span>
-    <span class="post-meta-divider">|</span>
+  </span>
+  <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
     <span title="站点阅读时长">1:57</span>
+  </span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
   </div>
 
-        
-
-
-
-
-
-
-
-
-      </div>
-    </footer>
-  </div>
+    </div>
+  </footer>
 
   
-  <script src="/lib/anime.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/pisces.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-
-
+  <script src="//cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
 
   
   <script>
     (function(){
-      var canonicalURL, curProtocol;
-      //Get the <link> tag
-      var x=document.getElementsByTagName("link");
-		//Find the last canonical URL
-		if(x.length > 0){
-			for (i=0;i<x.length;i++){
-				if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
-					canonicalURL=x[i].href;
-				}
-			}
-		}
-    //Get protocol
-	    if (!canonicalURL){
-	    	curProtocol = window.location.protocol.split(':')[0];
-	    }
-	    else{
-	    	curProtocol = canonicalURL.split(':')[0];
-	    }
-      //Get current URL if the canonical URL does not exist
-	    if (!canonicalURL) canonicalURL = window.location.href;
-	    //Assign script content. Replace current URL with the canonical URL
-      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+      var bp = document.createElement('script');
+      var curProtocol = window.location.protocol.split(':')[0];
+      bp.src = (curProtocol === 'https') ? 'https://zz.bdstatic.com/linksubmit/push.js' : 'http://push.zhanzhang.baidu.com/push.js';
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(bp, s);
+    })();
   </script>
 
 
@@ -3286,38 +3239,21 @@
 
 
 
-  
+
+
 
   
 
 
-<script>
-NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
-  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
-    var GUEST = ['nick', 'mail', 'link'];
-    var guest = 'nick,mail';
-    guest = guest.split(',').filter(item => {
-      return GUEST.includes(item);
-    });
-    new Valine({
-      el         : '#valine-comments',
-      verify     : true,
-      notify     : false,
-      appId      : 'wPH2Jnm3oElgKPw2VVl9mJsg-gzGzoHsz',
-      appKey     : 'BvY7WRtzhJPv6R7BHVVavXF0',
-      placeholder: "介个是评论区～",
-      avatar     : 'robohash',
-      meta       : guest,
-      pageSize   : '10' || 10,
-      visitor    : false,
-      lang       : 'zh-cn' || 'zh-cn',
-      path       : location.pathname,
-      recordIP   : false,
-      serverURLs : 'https://hexo-comment-api.yeslu.cn'
-    });
-  }, window.Valine);
-});
-</script>
+
+
+
+
+
+
+  
+
+  
 
 </body>
 </html>
