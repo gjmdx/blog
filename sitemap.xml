@@ -242,20 +242,6 @@
   </url>
   
   <url>
-    <loc>https://www.yeslu.cn/tags/Router/</loc>
-    <lastmod>2020-11-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.yeslu.cn/tags/Apple/</loc>
-    <lastmod>2020-11-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.yeslu.cn/tags/%E4%BC%9A%E8%AF%9D/</loc>
     <lastmod>2020-11-19</lastmod>
     <changefreq>daily</changefreq>
@@ -264,6 +250,27 @@
   
   <url>
     <loc>https://www.yeslu.cn/tags/%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2020-11-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yeslu.cn/tags/%E8%AF%8D%E6%B1%87/</loc>
+    <lastmod>2020-11-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yeslu.cn/tags/Router/</loc>
+    <lastmod>2020-11-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yeslu.cn/tags/Apple/</loc>
     <lastmod>2020-11-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -291,7 +298,7 @@
   </url>
   
   <url>
-    <loc>https://www.yeslu.cn/tags/%E8%AF%8D%E6%B1%87/</loc>
+    <loc>https://www.yeslu.cn/tags/%E6%96%B0%E9%97%BB/</loc>
     <lastmod>2020-11-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -319,13 +326,6 @@
   </url>
   
   <url>
-    <loc>https://www.yeslu.cn/tags/%E6%96%B0%E9%97%BB/</loc>
-    <lastmod>2020-11-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.yeslu.cn/tags/Office/</loc>
     <lastmod>2020-11-19</lastmod>
     <changefreq>daily</changefreq>
@@ -334,6 +334,13 @@
   
   <url>
     <loc>https://www.yeslu.cn/tags/%E6%8A%80%E5%B7%A7/</loc>
+    <lastmod>2020-11-19</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.yeslu.cn/tags/Endnote/</loc>
     <lastmod>2020-11-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -369,13 +376,6 @@
   
   <url>
     <loc>https://www.yeslu.cn/tags/%E8%BD%AF%E4%BB%B6/</loc>
-    <lastmod>2020-11-19</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.yeslu.cn/tags/Endnote/</loc>
     <lastmod>2020-11-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
